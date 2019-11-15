@@ -38,7 +38,7 @@ function greeting(firstName, lastName) {
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation: 
-// Nested function is a function inside of myFunction. nestedFunction has access to 'internal' due to scope chain. This means it has access to it's own scope, the outer functions scope, and global scope.
+// nestedFunction is a function inside of myFunction. nestedFunction has access to the variable 'internal' due to scope chain. This means nestedFunction has access to it's own scope, the outer functions scope, and global scope. In this case nestedFunction is accessing a variable in the outer function's scope.
 
 
 const external = "I'm outside the function";

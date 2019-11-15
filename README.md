@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach` and `.map` both perform a function once on every item in an array. The biggest difference is that `.map` returns a new array of the results without mutating the original array while `.forEach` always returns undefined and can mutatae the original array if specified in the function passed in.
+
 2. What is the difference between a function and a method?
+
+Methods are functions that belong to a class or object and are called from that object or class. Strictly speaking, because everything in JavaScript is an object (except primitives), functions are methods too because they belong to the window object. However, functions are different from methods because they can be called by themself without referencing the window object. 
 
 3. What is closure?
 
+Closure gives an inner function access to the outer functions scope. The inner function has access to the outer function's scope even after the outer function has returned.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window/ Global Object Binding: When in global scope, the 'this' keyword points to the window object.
+
+Implicit Binding: When a function is called with dot notation, the object before the dot becomes the 'this' keyword
+
+New Binding: The 'this' keyword in a function constructor or class points to the window object. When creating a new object with the 'new' keyword, the 'new' keyword creates a new object and the 'this' keyword now points to that new object.
+
+Explicit Binding: The 'this' keyword is explicitly set what 'this' points to by using .call(), .apply(), and .bind(). We pass what we want 'this' to be in the parenthesis. 
+
 5. Why do we need super() in an extended class?
+
+Super does for classes what Object.create() did for function constructors. Super allows the new object to have access to properties and methods on the parent object.
 
 ## Project Set up
 
